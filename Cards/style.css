@@ -1,0 +1,109 @@
+.card-container {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.card1 {
+  display: flex;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  width: 40%;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  gap: 100px;
+  flex-direction: row;
+  align-items: center;
+  font-size: 15px;
+  box-shadow: 0px 0px 16px 2px rgb(108, 106, 106);
+}
+.card2 {
+  display: flex;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  width: 40%;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  gap: 100px;
+  flex-direction: row;
+  align-items: center;
+  font-size: 15px;
+  box-shadow: 0px 0px 16px 2px rgb(108, 106, 106);
+}
+.card1:hover {
+  box-shadow: 0px 0px 16px 2px rgb(108, 106, 106);
+  transform: scale(1.03);
+  transition: 0, 3s;
+}
+.card2:hover {
+  box-shadow: 0px 0px 16px 2px rgb(108, 106, 106);
+  transform: scale(1.03);
+  transition: 0, 3s;
+}
+h1 {
+  font-weight: bolder 600;
+  color: rgb(34, 34, 34);
+}
+h2 {
+  color: rgb(73, 71, 71);
+}
+.rating {
+  width: 16px;
+}
+
+.product-image {
+  /* width: 50%; */
+  max-width: 350px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  right: 20px;
+}
+.product-image img {
+  width: 140%;
+  height: auto;
+}
+
+.input-group {
+  position: relative;
+  top: 15px;
+  left: 45px;
+  margin-top: 15px;
+}
+.input-group2 {
+  position: relative;
+  top: 50px;
+  left: 55px;
+  margin-top: 15px;
+}
+
+.Features {
+  list-style-position: inside;
+  text-align: center;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.Features li {
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.buy-btn {
+  color: white;
+  font-size: 20px;
+  font-weight: bolder 600;
+  background-color: rgb(75, 138, 91);
+  border: 5px 5px 2px 2px;
+  border-radius: 5px 5px 5px 5px;
+  position: relative;
+}
+.buy-btn:hover {
+  opacity: 0, 85;
+  background-color: rgb(18, 217, 84);
+  box-shadow: 0px 0px 16px 2px color rgb(38, 49, 38);
+  transition: 0, 2s;
+}
