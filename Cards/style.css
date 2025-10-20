@@ -1,3 +1,45 @@
+/* body {@media screen and min-width: 992px;} */
+.header {
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(136, 171, 159);
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  font-size: 25px;
+  color: rgb(15, 15, 15);
+  text-decoration: wavy;
+  
+}
+
+ul.topnav {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #acbe9c;
+  justify-content: center;
+}
+
+ul.topnav li {
+  display: block;
+  padding: 14px 16px;
+  color: azure;
+  font-size: 18px;
+}
+a:visited {
+  color: darkgreen;
+}
+
+.content {
+  text-align: left;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
 .card-container {
   display: flex;
   flex-direction: row;
@@ -46,16 +88,20 @@
 h1 {
   font-weight: bolder 600;
   color: rgb(34, 34, 34);
+  text-align: center;
+  font-size: 40px;
 }
 h2 {
   color: rgb(73, 71, 71);
+  text-align: center;
+  font-size: 30px;
 }
 .rating {
   width: 16px;
 }
 
 .product-image {
-  /* width: 50%; */
+  width: 50%;
   max-width: 350px;
   border-radius: 10px;
   margin-bottom: 10px;
@@ -106,4 +152,13 @@ h2 {
   background-color: rgb(18, 217, 84);
   box-shadow: 0px 0px 16px 2px color rgb(38, 49, 38);
   transition: 0, 2s;
+}
+
+.Footer {
+  position: static;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px;
+  justify-content: left;
 }
