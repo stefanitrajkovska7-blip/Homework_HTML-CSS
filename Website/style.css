@@ -1,0 +1,604 @@
+body {
+  margin: 0;
+  font-family: "Fantasy", "cursive";
+}
+.header {
+  position: sticky;
+  top: 0px;
+  z-index: 9999;
+}
+.header .header-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 50px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 150px;
+  justify-content: center;
+  justify-content: space-between;
+  background: #00001b;
+  padding-bottom: 18px;
+  padding-top: 12px;
+}
+.header-top-socials {
+  display: flex;
+  padding-right: 200px;
+  margin: 0;
+  gap: 10px;
+  color: silver;
+}
+.header-top-socials .youtube:hover {
+  box-shadow: 25px, inset 0 0 10px;
+  transform: scale(1.02);
+  cursor: pointer;
+  color: #daa520;
+}
+.header-top-socials .youtube:active {
+  color: #f1b620;
+}
+.header-top-socials .facebook:hover {
+  box-shadow: 25px, inset 0 0 10px;
+  transform: scale(1.02);
+  cursor: pointer;
+  color: #daa520;
+}
+.header-top-socials .facebook:active {
+  color: #f1b620;
+}
+.header-top-socials .instagram:hover {
+  box-shadow: 25px, inset 0 0 10px;
+  transform: scale(1.02);
+  cursor: pointer;
+  color: #daa520;
+}
+.header-top-socials .instagram:active {
+  color: #f1b620;
+}
+.header-top-socials .twit:hover {
+  box-shadow: 25px, inset 0 0 10px;
+  transform: scale(1.02);
+  cursor: pointer;
+  color: #daa520;
+}
+
+.header-top-socials .twit:active {
+  color: #f1b620;
+}
+
+#img-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  padding: 10px;
+  border-radius: 20px;
+}
+.gold-frame {
+  display: inline-block;
+  height: fit-content;
+  padding: 1px;
+  border-radius: 12px;
+  background: linear-gradient(
+    135deg,
+    #b8860b 0%,
+    #ffd700 20%,
+    #fff8dc 40%,
+    #daa520 60%,
+    #ffd700 80%,
+    #b8860b 100%
+  );
+  box-shadow: 0 0 10px rgba(#255, #255, #255, 0.3);
+  transition: 0.3s;
+}
+
+.gold-frame:hover {
+  box-shadow: 0 0 25px, inset 0 0 10px;
+  transform: scale(1.02);
+  cursor: pointer;
+}
+.gold-frame:active {
+  color: #daa520;
+}
+
+.header-top-right {
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-top-right .search-input {
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 5px 10px;
+  background-color: #383b52;
+}
+.search-input input {
+  border: none;
+  background-color: #383b52;
+  color: silver;
+}
+.search-input:hover {
+  box-shadow: 0 0 25px, inset 0 0 10px;
+  transform: scale(1.02);
+  cursor: pointer;
+}
+.header-top-right .log-btn {
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 4px 8px;
+  background-color: rgb(194, 162, 36);
+}
+.log-btn button {
+  border: none;
+  background-color: rgb(194, 162, 36);
+  color: rgb(67, 50, 6);
+  font-weight: 800;
+}
+.log-btn:hover {
+  box-shadow: 5px 10px 25px, inset 0 0 10px;
+  transform: scale(1.02);
+  cursor: pointer;
+}
+.log-btn:active {
+  color: rgb(222, 181, 33);
+}
+
+.header-top-right .sign-btn {
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 4px 8px;
+  background-color: rgb(3, 138, 111);
+}
+.sign-btn button {
+  border: none;
+  background-color: rgb(3, 138, 111);
+  color: white;
+  font-weight: bolder;
+}
+.sign-btn:hover {
+  box-shadow: 5px 10px 25px, inset 0 0 10px;
+  transform: scale(1.02);
+  cursor: pointer;
+}
+.sign-btn:active {
+  color: rgb(28, 188, 156);
+}
+
+.header-nav {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 40px;
+  border: 1px solid black;
+  background: linear-gradient(
+    135deg,
+    #b8860b 0%,
+    #ffd700 20%,
+    #fff8dc 40%,
+    #daa520 60%,
+    #ffd700 80%,
+    #b8860b 100%
+  );
+  box-shadow: 0 0 10px rgba(#255, #255, #255, 0.3);
+  font-weight: 600;
+}
+
+.header-nav .nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  padding-right: 20px;
+  padding-left: 20px;
+  row-gap: 30px;
+}
+.nav-bar li:hover {
+  box-shadow: 25px rgba(black, 0.3), inset 0 0 10px;
+  transform: scale(1.02);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.animation {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 40px;
+  background: #161320;
+}
+
+.hogwarts-house {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  background: url(images/stars.png);
+  padding: 40px 0;
+}
+
+.hogwarts-house .houses {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 10px;
+}
+
+.houses .header-banner {
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 5px 14px;
+  background-color: rgb(3, 138, 111);
+  padding-top: 5px;
+  margin-top: 5px;
+}
+.header-banner button {
+  border: 1px;
+  color: white;
+  font-weight: 600;
+  padding: 2px 16px;
+  border-radius: 12px;
+  background-color: rgb(3, 138, 111);
+}
+.header-banner:hover {
+  box-shadow: 5px 10px 25px, inset 0 0 10px;
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.header-banner:active {
+  color: rgb(36, 207, 173);
+}
+
+#house-img {
+  width: 600px;
+  height: 250px;
+  border-radius: 18px;
+}
+
+.hogwarts-house .house-rigth {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-right: 40px;
+}
+.house-rigth h1 {
+  color: silver;
+}
+.house-rigth button {
+  border: 1px solid black;
+  border-radius: 18px;
+  padding: 10px 40px;
+  background: linear-gradient(
+    135deg,
+    #b8860b 0%,
+    #ffd700 20%,
+    #fff8dc 40%,
+    #daa520 60%,
+    #ffd700 80%,
+    #b8860b 100%
+  );
+  color: rgb(38, 37, 37);
+  font-weight: 800;
+  font-size: 16px;
+}
+.house-rigth button:hover {
+  box-shadow: 5px 10px 25px, inset 0 0 10px;
+  transform: scale(1.02);
+  cursor: pointer;
+}
+.house-rigth button:active {
+  color: #db7c0f;
+}
+.quiz-container {
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 40px 60px;
+  background: #161320;
+}
+.quiz-container h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  color: white;
+}
+.quiz-container .quiz-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 40px;
+  height: 380px;
+}
+.quiz-cards .card1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/fact-file-herbology-pottermore-moments.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  gap: 10px;
+  border-radius: 20px;
+}
+.quiz-cards .card2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/hp-f3-boggart-snape-augusta-square.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  gap: 10px;
+  border-radius: 20px;
+}
+
+.quiz-cards .card3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/the-wand-lighting-charm_1_1800x1248.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  gap: 10px;
+  border-radius: 20px;
+}
+
+.rate-star {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  color: #daa520;
+}
+.news {
+  background-color: #00001b;
+}
+.news-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 60px 0;
+  background: #00001b;
+  margin: 0 90px;
+}
+.news-container .news-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 575px;
+  height: 125px;
+  color: white;
+}
+.news-container img {
+  width: 575px;
+  height: 354px;
+  border-radius: 20px;
+}
+
+.news-container button {
+  margin-top: 30px;
+  border-radius: 18px;
+  padding: 10px 40px;
+  background: linear-gradient(
+    135deg,
+    #b8860b 0%,
+    #ffd700 20%,
+    #fff8dc 40%,
+    #daa520 60%,
+    #ffd700 80%,
+    #b8860b 100%
+  );
+  color: rgb(38, 37, 37);
+  font-weight: 800;
+  font-size: 16px;
+}
+.news-container button:hover {
+  box-shadow: 5px 10px 25px, inset 0 0 10px;
+  transform: scale(1.02);
+  cursor: pointer;
+}
+.news-container button:active {
+  color: #f6cf0f;
+}
+.main-film-cont {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/dementors-surround-hogwarts-600x0-c-default.jpg);
+}
+.film-container {
+  margin: 0 90px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/dementors-surround-hogwarts-600x0-c-default.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: white;
+}
+.film-container h1,
+h2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 0;
+  padding-top: 20px;
+}
+.film-container .films {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: auto;
+}
+.product-card h5 {
+  font-size: 16px;
+}
+.product-card img {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  height: 364px;
+}
+.footer {
+  padding: 50px 80px;
+  display: flex;
+  flex-direction: column;
+  background: #00001b;
+  color: white;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #c0a809;
+  padding: 50px 80px;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  height: 105px;
+  padding-bottom: 40px;
+  align-items: center;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.footer-top li {
+  list-style: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+.fot-top1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.fot-top2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.fot-top3 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-top .fot-top1 .fot-top2 .fot-top3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-logo img {
+  width: 140px;
+  height: 50px;
+  display: flex;
+  justify-content: right;
+}
+.footer-bottom {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+.footer-bot-right {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: right;
+  gap: 10px;
+}
+
+.footer-bottom {
+  display: flex;
+  padding: 40px 20px;
+  padding-bottom: 0;
+  justify-content: space-between;
+}
+.footer-bot-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+.footer-bot-left p {
+  margin: 0;
+}
+.footer-bot-right {
+  color: silver;
+}
+.footer-bot-right .youtube:hover {
+  box-shadow: 25px, inset 0 0 10px;
+  transform: scale(1.02);
+  cursor: pointer;
+  color: #daa520;
+}
+
+.footer-bot-right .youtube:active {
+  color: #f1b620;
+}
+
+.footer-bot-right .facebook:hover {
+  box-shadow: 25px, inset 0 0 10px;
+  transform: scale(1.02);
+  cursor: pointer;
+  color: #daa520;
+}
+
+.footer-bot-right .facebook:active {
+  color: #f1b620;
+}
+.footer-bot-right .instagram:hover {
+  box-shadow: 25px, inset 0 0 10px;
+  transform: scale(1.02);
+  cursor: pointer;
+  color: #daa520;
+}
+
+.footer-bot-right .instagram:active {
+  color: #f1b620;
+}
+.footer-bot-right .twit:hover {
+  box-shadow: 25px, inset 0 0 10px;
+  transform: scale(1.02);
+  cursor: pointer;
+  color: #daa520;
+}
+
+.footer-bot-right .twit:active {
+  color: #f1b620;
+}

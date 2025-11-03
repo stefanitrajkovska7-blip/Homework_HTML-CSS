@@ -1,6 +1,8 @@
 body {
   /* background-color: rgb(107, 137, 141); */
   background: url(https://files.vgtimes.ru/gallery/main/174851/3389690307_hogvarts_-nasledie_20230207022402.webp);
+  background-size: contain;
+  background-position: center;
 }
 
 .header {
@@ -29,8 +31,11 @@ body {
   display: flex;
   flex-direction: column;
   padding: 10px;
+  padding-bottom: 2px;
   background: url(https://img.freepik.com/premium-photo/paper-frames-decorative-backgrounds-vintageinspired-urban-themes-creative-templates_1020495-134782.jpg?semt=ais_hybrid&w=740&q=80);
   box-shadow: 5px 5px 20px 2px rgba(129, 104, 12, 0.931);
+  /* background-size: contain;
+  background-position: bottom; */
 }
 .card2 {
   width: 600px;
@@ -40,6 +45,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 10px;
+  padding-bottom: 2px;
   background: url(https://img.freepik.com/premium-photo/paper-frames-decorative-backgrounds-vintageinspired-urban-themes-creative-templates_1020495-134782.jpg?semt=ais_hybrid&w=740&q=80);
   box-shadow: 5px 5px 20px 2px rgba(129, 104, 12, 0.931);
 }
