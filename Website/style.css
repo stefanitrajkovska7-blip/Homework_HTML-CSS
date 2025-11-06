@@ -207,6 +207,11 @@ body {
   padding: 0 40px;
   background: #161320;
 }
+.animation svg {
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+}
 
 .hogwarts-house {
   display: grid;
@@ -239,8 +244,10 @@ body {
   color: white;
   font-weight: 600;
   padding: 2px 16px;
-  border-radius: 12px;
+  border-radius: 10px;
   background-color: rgb(3, 138, 111);
+  display: flex;
+  align-items: center;
 }
 .header-banner:hover {
   box-shadow: 5px 10px 25px, inset 0 0 10px;
@@ -447,7 +454,6 @@ body {
   background-size: cover;
   position: relative;
   color: white;
-  
 }
 .film-container h1,
 h2 {
@@ -534,6 +540,12 @@ h2 {
   display: flex;
   justify-content: right;
 }
+.footer-container hr {
+  border: none;
+  width: 90%;
+  border-top: 1px solid #d0a60d;
+  margin: 20px auto;
+}
 .footer-bottom {
   display: flex;
   flex-direction: row;
@@ -616,20 +628,19 @@ h2 {
   .nav-bar li:nth-child(9) {
     display: none;
   }
-  .header-nav{
+  .header-nav {
     padding: 0 5px;
   }
-  
 }
 
 @media screen and (max-width: 1200px) {
-    .header-top-right   .log-btn {
+  .header-top-right .log-btn {
     display: none;
   }
-   .nav-bar li:nth-child(8) {
+  .nav-bar li:nth-child(8) {
     display: none;
   }
-  .header-nav{
+  .header-nav {
     padding: 0 5px;
     justify-content: space-between;
   }
@@ -638,71 +649,68 @@ h2 {
   .header-top-right .search-input {
     display: none;
   }
-  .header-top-socials .twit
-  {
+  .header-top-socials .twit {
     display: none;
   }
-   .nav-bar li:nth-child(7) {
+  .nav-bar li:nth-child(7) {
     display: none;
   }
-   .header-nav{
+  .header-nav {
     padding: 0 5px;
     justify-content: space-between;
   }
   .header-top-logo {
-  padding-left: 0;
-  padding-right: 100px;
- }
+    padding-left: 0;
+    padding-right: 100px;
+  }
 }
 @media screen and (max-width: 992px) {
-  .header-top-socials .instagram{
+  .header-top-socials .instagram {
     display: none;
   }
-   .nav-bar li:nth-child(6) {
+  .nav-bar li:nth-child(6) {
     display: none;
   }
-   .header-nav{
+  .header-nav {
     padding: 0 5px;
     justify-content: space-between;
   }
-   .header-top-logo {
-  padding-left: 0;
-  padding-right: 100px;
- }
+  .header-top-logo {
+    padding-left: 0;
+    padding-right: 100px;
+  }
 }
 
 @media screen and (max-width: 950px) {
-  .header-top-socials .facebook{
+  .header-top-socials .facebook {
     display: none;
   }
-   .nav-bar li:nth-child(5) {
+  .nav-bar li:nth-child(5) {
     display: none;
   }
-   .header-nav{
+  .header-nav {
     padding: 0 5px;
     justify-content: space-between;
   }
-   .header-top-logo {
-  padding-left: 0;
-  padding-right: 100px;
- }
+  .header-top-logo {
+    padding-left: 0;
+    padding-right: 100px;
+  }
 }
 
 @media screen and (max-width: 778px) {
-  .header-top-socials .youtube{
+  .header-top-socials .youtube {
     display: none;
   }
-    .nav-bar li:nth-child(4) {
+  .nav-bar li:nth-child(4) {
     display: none;
   }
-   .header-nav{
+  .header-nav {
     padding: 0 5px;
     justify-content: space-between;
   }
- .header-top-logo {
-  padding-left: 0;
-  padding-right: 100px;
- }
-
+  .header-top-logo {
+    padding-left: 0;
+    padding-right: 100px;
+  }
 }
-  
