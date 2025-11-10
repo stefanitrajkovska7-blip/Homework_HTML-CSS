@@ -68,3 +68,4 @@ if (temperature2 >= 25 || temperature3 >= 24) {
   if(temperature2 >= 18 && temperature3 <= 17) {
     console.log("The weather today is " + weather2 + "! Wear a T-shirt and take a jacket just in case!");
  }
+ 
