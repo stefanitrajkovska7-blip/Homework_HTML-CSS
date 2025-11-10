@@ -904,8 +904,7 @@ h2 {
     align-items: center;
     justify-content: center;
   }
-  .footer-bot-right {
-  }
+  
   .footer-bot-right {
     display: flex;
     flex-direction: row;
