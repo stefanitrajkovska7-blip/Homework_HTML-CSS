@@ -130,6 +130,9 @@ const solarObjects = [object1, object2, object3, object4, object5, object6, obje
 const solarObjects2 = [object8, object9, object10]
  console.log(solarObjects);
 
+ solarObjects.push(...solarObjects2);
+console.log(solarObjects);
+
  const upperCaseNames1 = solarObjects.map(object => object.name.toUpperCase());
 
 console.log(upperCaseNames1);
@@ -138,6 +141,43 @@ console.log(upperCaseNames1);
 
 console.log("-----Filter na elementi vo niza pogolemi od x----");
 
+const orbitDays = solarObjects.filter(object => object.orbitPeriodDays > 5000);
 
+console.log(orbitDays);
+console.log(orbitDays.length);
+
+console.log("-------------------------------------------------------");
 
 console.log("Kombinacija na filter i map so koristenje na kompleksni objekti");
+
+const mappedObjects = solarObjects
+.filter(object => object.orbitPeriodDays > 10000)
+.map ((object) => {
+  // console.log(object);
+  return {
+    ime: object.name,
+    orbitDenovi: object.orbitPeriodDays,
+    mesecini: object.moons,
+    sostav: object.mainComposition,
+  }
+})
+
+console.log(mappedObjects);
+
+console.log("-------------------------------------------------------");
+
+
+const mapObjekti = solarObjects
+.filter(object => object.moons > 100)
+.map ((object) => {
+
+ return {
+    planetName: object.name,
+    planetMoons: object.moons,
+    planetComposition: object.mainComposition,
+
+ }
+  
+})
+
+console.log(mapObjekti);
